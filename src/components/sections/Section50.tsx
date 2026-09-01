@@ -41,7 +41,7 @@ export function Section50() {
             <div className="text-secondary mb-4"><CheckCircle size={32} /></div>
             <h3 className="text-lg font-bold mb-2">Built a Predictor</h3>
             <p className="text-neutral-600 text-sm">
-              We created a working equation (Y' = 3.917 + 6.116X) to forecast future revenue.
+              We created a working equation (Y&apos; = 3.917 + 6.116X) to forecast future revenue.
             </p>
           </motion.div>
 

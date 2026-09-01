@@ -3,7 +3,7 @@
 import React from 'react';
 import { Slide } from '@/components/layout/Slide';
 import { motion } from 'framer-motion';
-import { TrendingUp, DollarSign, Users } from 'lucide-react';
+import { TrendingUp, DollarSign } from 'lucide-react';
 
 export function Section39() {
   return (
@@ -56,7 +56,7 @@ export function Section39() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="text-lg font-medium text-neutral-800 mt-12 bg-neutral-100 px-6 py-3 rounded-full"
         >
-          Goal: Can we predict next month's sales based on our ad budget?
+          Goal: Can we predict next month&apos;s sales based on our ad budget?
         </motion.p>
       </div>
     </Slide>

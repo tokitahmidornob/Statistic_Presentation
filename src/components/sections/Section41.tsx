@@ -28,7 +28,7 @@ export function Section41() {
           transition={{ duration: 0.6 }}
           className="text-xl text-neutral-600 text-center max-w-3xl mb-8"
         >
-          First, we check if a relationship even exists. Calculating Pearson's r for our data yields <span className="font-bold text-primary">r = 0.986</span>. This indicates an extremely strong positive linear relationship between ad spend and sales.
+          First, we check if a relationship even exists. Calculating Pearson&apos;s r for our data yields <span className="font-bold text-primary">r = 0.986</span>. This indicates an extremely strong positive linear relationship between ad spend and sales.
         </motion.p>
 
         <div className="w-full max-w-2xl relative h-80 pt-12">

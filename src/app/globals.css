@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-neutral-600 font-sans antialiased overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-neutral-900 font-semibold tracking-tight;
+  }
+
+  /* Smooth scrolling for anchor links */
+  html {
+    scroll-behavior: smooth;
+    font-size: 125%; /* Scales the default base up to 20px (a 25% global increase) */
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* KaTeX custom overrides for presentation scale */
+.katex-display {
+  font-size: 1.5em; /* make equations larger by default */
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* D3.js svg general styling */
+svg {
+  display: block;
+}

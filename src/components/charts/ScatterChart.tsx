@@ -87,30 +87,42 @@ export function ScatterChart({
 
     if (showAxes) {
       // X Axis
-      g.append('g')
+      const xAxisGroup = g.append('g')
         .attr('transform', `translate(0,${innerHeight})`)
         .call(d3.axisBottom(xScale).ticks(5))
         .attr('color', '#5B6470')
-        .style('font-family', 'inherit')
-        .append('text')
+        .style('font-family', 'inherit');
+        
+      xAxisGroup.selectAll('.tick text')
+        .attr('font-size', '14px')
+        .attr('font-weight', '500');
+        
+      xAxisGroup.append('text')
         .attr('x', innerWidth / 2)
         .attr('y', 40)
         .attr('fill', '#0E1116')
         .text(xLabel)
-        .style('font-weight', '600');
+        .attr('font-size', '16px')
+        .attr('font-weight', 'bold');
 
       // Y Axis
-      g.append('g')
+      const yAxisGroup = g.append('g')
         .call(d3.axisLeft(yScale).ticks(5))
         .attr('color', '#5B6470')
-        .style('font-family', 'inherit')
-        .append('text')
+        .style('font-family', 'inherit');
+        
+      yAxisGroup.selectAll('.tick text')
+        .attr('font-size', '14px')
+        .attr('font-weight', '500');
+        
+      yAxisGroup.append('text')
         .attr('transform', 'rotate(-90)')
         .attr('x', -innerHeight / 2)
         .attr('y', -45)
         .attr('fill', '#0E1116')
         .text(yLabel)
-        .style('font-weight', '600');
+        .attr('font-size', '16px')
+        .attr('font-weight', 'bold');
     }
 
     if (drifting) {
